@@ -6,6 +6,7 @@ import WhyUs from "sections/WhyUs/WhyUs";
 import Portfolio from "sections/Portfolio/Portfolio";
 import Testimonials from "sections/Testimonials/Testimonials";
 import ContactUs from "sections/ContactUs/ContactUs";
+import Footer from "sections/Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Portfolio />
       <Testimonials />
       <ContactUs />
+      <Footer />
     </div>
   );
 }
