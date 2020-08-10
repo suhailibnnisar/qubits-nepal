@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import Testimonial from "./Testimonial/Testimonial";
+import Heading from "components/Heading/Heading";
+import Caption from "components/Caption/Caption";
 
 const testimonials = [
   {
@@ -16,9 +18,9 @@ const testimonials = [
   {
     id: "1",
     imageUri:
-      "https://www.truehoney.co.nz/wp-content/uploads/2016/05/guy-square-e1474515955904.jpg",
+      "https://thumbor.forbes.com/thumbor/512x512/https://blogs-images.forbes.com/danieldambrosio/files/2019/08/alex-e1567128889741.jpg?width=960",
     name: "Nishchal Banskota",
-    role: "CEO",
+    role: "Co-Founder",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a erat efficitur, feugiat lectus eget, consectetur magna. Quisque at quam tincidunt, convallis felis dignissim, iaculis massa. Fusce non est et turpis imperdiet mollis vehicula vitae orci. Nulla at nisi egestas quam gravida scelerisque. Pellentesque a tellus facilisis risus porta blandit. Nullam et urna sodales nisl bibendum facilisis. Etiam hendrerit et enim ut posuere.",
   },
@@ -28,7 +30,8 @@ const Testimonials: React.FC = () => {
   return (
     <Container>
       <Heading>Client's Saying</Heading>
-      <Wrapper>
+      <Caption>“We love their idea and they love our work”</Caption>
+      <Wrapper id="testimonials">
         {testimonials.map((testimonial) => (
           <Testimonial key={testimonial.id} testimonial={testimonial} />
         ))}
@@ -40,16 +43,6 @@ const Testimonials: React.FC = () => {
 const Container = styled.div`
   background-color: #f7f9fb;
   padding: 2rem 0;
-`;
-
-const Heading = styled.span`
-  font-size: 2rem;
-  color: #111;
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
 `;
 
 const Wrapper = styled.div`

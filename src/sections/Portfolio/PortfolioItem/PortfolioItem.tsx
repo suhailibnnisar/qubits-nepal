@@ -41,7 +41,7 @@ const Container = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 70%;
+  height: 250px;
   background-image: url(${({ src }) => src});
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,6 +55,7 @@ const ContentInfo = styled.div`
 
 const Title = styled.span`
   font-size: 1.4rem;
+  line-height: 1.8rem;
   color: #111;
   font-weight: bolder;
 `;

@@ -48,7 +48,7 @@ const ContactUs: React.FC = () => {
   }
 
   return (
-    <Container>
+    <Container id="contact">
       <Heading>Free Inquiry</Heading>
       <Formik
         validateOnBlur
@@ -177,6 +177,7 @@ const SubmitButton = styled.input`
   color: white;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 1.4rem;
 `;
 
 const Error = styled.span`

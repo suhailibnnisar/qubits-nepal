@@ -54,6 +54,8 @@ const Heading = styled.span`
   margin-top: 2rem;
 `;
 
-const Description = styled.span``;
+const Description = styled.span`
+  text-align: center;
+`;
 
 export default Service;

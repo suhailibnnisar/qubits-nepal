@@ -5,7 +5,7 @@ import whyUsImage from "assets/whyus.jpg";
 
 const WhyUs: React.FC = () => {
   return (
-    <Container>
+    <Container id="about-us">
       <DetailSection>
         <Header>Why Us?</Header>
         <Description>
@@ -26,7 +26,7 @@ const WhyUs: React.FC = () => {
         </Description>
         <LearnMoreLink>Learn More</LearnMoreLink>
       </DetailSection>
-      <ImageSection></ImageSection>
+      <ImageSection />
     </Container>
   );
 };

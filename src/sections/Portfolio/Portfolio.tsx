@@ -3,74 +3,63 @@ import styled from "styled-components";
 
 import PortfolioItem from "./PortfolioItem/PortfolioItem";
 
-import foodImage from "assets/food.webp";
-import educationImage from "assets/education.webp";
+import foodImage from "assets/projects/food.webp";
+import educationImage from "assets/projects/education.webp";
+import eCommerceImage from "assets/projects/e-commerce.webp";
+import digitalMarketingImage from "assets/projects/digitalmarketing.webp";
+import Heading from "components/Heading/Heading";
+import Caption from "components/Caption/Caption";
 
 const portfolioItems = [
   {
     id: "1",
-    name: "lorem",
-    description: "ipsum",
+    name: "Food Delivery App",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci lacus, imperdiet id lectus sed, faucibus venenatis erat. Nullam ut tellus a leo finibus ornare placerat eget massa.",
     image: foodImage,
   },
   {
     id: "1",
-    name: "lorem",
-    description: "ipsum",
+    name: "Online Learning App",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci lacus, imperdiet id lectus sed, faucibus venenatis erat. Nullam ut tellus a leo finibus ornare placerat eget massa.",
     image: educationImage,
   },
   {
     id: "1",
-    name: "lorem",
-    description: "ipsum",
-    image: educationImage,
+    name: "Bits Digital Marketing Bundle",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci lacus, imperdiet id lectus sed, faucibus venenatis erat. Nullam ut tellus a leo finibus ornare placerat eget massa.",
+    image: digitalMarketingImage,
   },
   {
     id: "1",
-    name: "lorem",
-    description: "ipsum",
-    image: educationImage,
+    name: "Fujinto Shopping",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci lacus, imperdiet id lectus sed, faucibus venenatis erat. Nullam ut tellus a leo finibus ornare placerat eget massa.",
+    image: eCommerceImage,
   },
 ];
 
 const Portfolio: React.FC = () => {
   return (
-    <>
+    <div id="portfolio">
       <Heading>Recent Projects</Heading>
-      <Caption>lorem ipsum</Caption>
+      <Caption>"We love to move fast"</Caption>
       <Wrapper>
         {portfolioItems.map((portfolio) => {
           return <PortfolioItem portfolio={portfolio} />;
         })}
       </Wrapper>
-    </>
+    </div>
   );
 };
-
-const Heading = styled.span`
-  font-size: 2rem;
-  color: #111;
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-`;
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 3rem;
-`;
-
-const Caption = styled.span`
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 export default Portfolio;

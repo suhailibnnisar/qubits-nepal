@@ -8,7 +8,10 @@ import twitterIcon from "assets/icons/twitter.png";
 const Footer: React.FC = () => {
   return (
     <Container>
-      <CopyrightText>© 2013 Janie Doe. All rights reserved.</CopyrightText>
+      <CopyrightText>
+        © {new Date().getFullYear()} Qubits Incorporation Pvt. Ltd. All rights
+        reserved.
+      </CopyrightText>
       <SocialMedia>
         <Icon src={facebookIcon} />
         <Icon src={instagramIcon} />
